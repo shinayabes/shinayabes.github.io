@@ -1,1 +1,0 @@
-# shinayabes.github.io
