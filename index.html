@@ -3,9 +3,9 @@
 
 <head>
 
-    <!--==============================
+    <!-- =====================================================
     META
-    ==============================-->
+    ====================================================== -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
         content="Shina Yabes">
 
     <meta name="keywords"
-        content="Virtual Assistant, Administrative Assistant, Data Entry, Portfolio, Philippines">
+        content="Administrative Assistant, Virtual Assistant, Data Entry, Portfolio">
 
     <!-- Open Graph -->
 
@@ -35,24 +35,18 @@
     <meta property="og:type"
         content="website">
 
-    <!--==============================
-    FAVICON
-    ==============================-->
+    <!-- Favicon -->
 
     <link rel="icon"
         type="image/png"
-        href="assets/images/favicon.png">
+        href="assets/images/Logo.png">
 
-    <!--==============================
-    FONT AWESOME
-    ==============================-->
+    <!-- Font Awesome -->
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!--==============================
-    CSS
-    ==============================-->
+    <!-- CSS -->
 
     <link rel="stylesheet"
         href="css/style.css">
@@ -61,81 +55,104 @@
 
 <body>
 
-<!--=================================
+<!-- =====================================================
 PRELOADER
-==================================-->
+====================================================== -->
 
 <div id="preloader"></div>
 
-<!--=================================
-SCROLL PROGRESS BAR
-==================================-->
-
 <div id="progressBar"></div>
 
-<!--=================================
+<!-- =====================================================
 HEADER
-==================================-->
+====================================================== -->
 
-<header>
+<header id="header">
 
-<nav>
+    <nav class="navbar">
 
-<div class="logo">
+        <!-- Logo -->
 
-SHINA<span>.</span>
+        <a href="#home" class="logo">
 
-</div>
+            <img src="assets/images/Logo.png"
+                 alt="Shina Logo">
 
-<div class="nav-links">
+            <span>SHINA</span>
 
-<a href="#home">Home</a>
+        </a>
 
-<a href="#about">About</a>
+        <!-- Navigation -->
 
-<a href="#services">Services</a>
+        <ul class="nav-links">
 
-<a href="#experience">Experience</a>
+            <li><a href="#home">Home</a></li>
 
-<a href="#portfolio">Portfolio</a>
+            <li><a href="#about">About</a></li>
 
-<a href="#contact">Contact</a>
+            <li><a href="#services">Services</a></li>
 
-<a href="assets/resume/Shina_Yabes_Resume.pdf"
-download
-class="btn btn-primary">
+            <li><a href="#experience">Experience</a></li>
 
-<i class="fa-solid fa-download"></i>
+            <li><a href="#portfolio">Portfolio</a></li>
 
-Resume
+            <li><a href="#contact">Contact</a></li>
 
-</a>
+        </ul>
 
-</div>
+        <!-- Resume -->
 
-</nav>
+        <a href="assets/pdf/YABES_Resume.pdf"
+           download
+           class="resume-btn">
+
+            <i class="fa-solid fa-download"></i>
+
+            Resume
+
+        </a>
+
+        <!-- Mobile Menu -->
+
+        <button class="menu-toggle"
+                aria-label="Toggle Menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </nav>
 
 </header>
 
-<!--=================================
+<!-- =====================================================
 MAIN
-==================================-->
+====================================================== -->
 
 <main>
 
-<!--=================================
+<!-- =====================================================
 HOME
-==================================-->
+====================================================== -->
 
-<section
-id="home"
-class="hero">
+<section id="home"
+         class="hero">
 
 <div class="container">
 
 <div class="hero-grid">
 
+<!-- ======================================
+Hero Content
+======================================= -->
+
 <div class="hero-content">
+
+<span class="hero-tag">
+
+Available for Work
+
+</span>
 
 <p class="hero-intro">
 
@@ -149,27 +166,28 @@ Shina Yabes
 
 </h1>
 
-<h3>
+<div class="typing-wrapper">
 
-<span id="typing">
+<h2 id="typing">
 
 Administrative Assistant
 
-</span>
+</h2>
 
-</h3>
+</div>
 
 <p class="hero-description">
 
-Administrative Assistant with over three years of experience supporting private clients through accurate data entry, document preparation, records management, email organization, scheduling, and administrative coordination. I help professionals streamline daily operations through organized systems, attention to detail, and dependable administrative support.
+Administrative Assistant with more than three years of experience supporting private clients through administrative coordination, document preparation, accurate data entry, records management, scheduling, and professional communication. I help businesses stay organized by building efficient workflows and dependable administrative systems.
 
 </p>
 
-<div class="hero-buttons">
+<!-- CTA -->
 
-<a
-href="#contact"
-class="btn btn-primary">
+<div class="hero-actions">
+
+<a href="#contact"
+   class="btn btn-primary">
 
 <i class="fa-solid fa-paper-plane"></i>
 
@@ -177,9 +195,8 @@ Hire Me
 
 </a>
 
-<a
-href="#portfolio"
-class="btn btn-outline">
+<a href="#portfolio"
+   class="btn btn-outline">
 
 <i class="fa-solid fa-briefcase"></i>
 
@@ -189,85 +206,87 @@ View Portfolio
 
 </div>
 
-<!--==============================
-HERO STATS
-==============================-->
+<!-- Social -->
 
-<div class="quick-facts mt-3">
+<div class="hero-social">
 
-<div class="fact">
+<a href="mailto:va.shinayabes@gmail.com"
+   aria-label="Email">
 
-<h2>
+<i class="fa-solid fa-envelope"></i>
 
-3+
+</a>
 
-</h2>
+<a href="https://linkedin.com/in/shinayabes"
+   target="_blank"
+   aria-label="LinkedIn">
 
-<p>
+<i class="fab fa-linkedin"></i>
 
-Years Experience
+</a>
 
-</p>
+<a href="https://instagram.com/"
+   target="_blank"
+   aria-label="Instagram">
 
-</div>
+<i class="fab fa-instagram"></i>
 
-<div class="fact">
-
-<h2>
-
-2
-
-</h2>
-
-<p>
-
-Private Clients
-
-</p>
+</a>
 
 </div>
 
-<div class="fact">
+<!-- Stats -->
 
-<h2>
+<div class="hero-stats">
 
-6+
+<div class="stat-card">
 
-</h2>
+<h2>3+</h2>
 
-<p>
-
-Professional Tools
-
-</p>
+<p>Years Experience</p>
 
 </div>
 
-<div class="fact">
+<div class="stat-card">
 
-<h2>
+<h2>2</h2>
 
-100+
+<p>Private Clients</p>
 
-</h2>
+</div>
 
-<p>
+<div class="stat-card">
 
-Administrative Documents
+<h2>6+</h2>
 
-</p>
+<p>Professional Tools</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>100+</h2>
+
+<p>Administrative Documents</p>
 
 </div>
 
 </div>
 
 </div>
+
+<!-- ======================================
+Hero Image
+======================================= -->
 
 <div class="hero-image">
 
-<img
-src="assets/images/profile_picture.JPG"
-alt="Shina Yabes">
+<div class="image-frame">
+
+<img src="assets/images/profile_picture.JPG"
+     alt="Shina Yabes">
+
+</div>
 
 </div>
 
@@ -277,198 +296,352 @@ alt="Shina Yabes">
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 ABOUT
-==================================-->
+====================================================== -->
 
-<section
-id="about">
+<section id="about" class="about section">
 
-<div class="container">
+    <div class="container">
 
-<div class="about-grid">
+        <div class="section-heading">
 
-<div class="about-photo">
+            <span class="section-tag">
+                Get to Know Me
+            </span>
 
-<img
-src="assets/images/profile_picture.JPG"
-alt="Shina Yabes">
+            <h2>
+                About Me
+            </h2>
 
-</div>
+        </div>
 
-<div class="about-content">
+        <div class="about-grid">
 
-<h2>
+            <div class="about-photo">
 
-About Me
+                <div class="photo-frame">
 
-</h2>
+                    <img src="assets/images/Portfolio_Photo.JPG"
+                        alt="Shina Yabes">
 
-<p>
+                </div>
 
-I am an Administrative Assistant with experience supporting professionals in both educational and business environments. Throughout my experience, I have managed administrative tasks such as data entry, document preparation, records management, email organization, scheduling, and Canva design while maintaining confidentiality, organization, and accuracy.
+            </div>
 
-</p>
+            <div class="about-content">
 
-<p>
+                <h3>
+                    Reliable Administrative Support That Helps Businesses Stay Organized.
+                </h3>
 
-I enjoy creating efficient administrative workflows that help clients save time, stay organized, and focus on higher-value work. I take pride in being dependable, detail-oriented, adaptable, and committed to delivering quality administrative support.
+                <p>
 
-</p>
+                    I am an Administrative Assistant with experience supporting professionals in educational, business, and corporate environments. My work focuses on keeping operations organized through accurate documentation, efficient workflows, and dependable administrative support.
 
-</div>
+                </p>
 
-</div>
+                <p>
 
-</div>
+                    From managing emails and calendars to preparing reports, organizing files, and handling data entry, I enjoy creating systems that save time and improve productivity while maintaining professionalism and confidentiality.
+
+                </p>
+
+                <div class="about-highlights">
+
+                    <div class="highlight">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Detail-Oriented
+                        </span>
+
+                    </div>
+
+                    <div class="highlight">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Highly Organized
+                        </span>
+
+                    </div>
+
+                    <div class="highlight">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Fast Learner
+                        </span>
+
+                    </div>
+
+                    <div class="highlight">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Professional Communication
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<!--=================================
-WHY HIRE ME
-==================================-->
+<!-- =====================================================
+WHY WORK WITH ME
+====================================================== -->
 
 <section class="why-hire">
 
     <div class="container">
 
-        <h2>Why Work With Me</h2>
+        <div class="section-heading">
 
-        <div class="why-content">
+            <span class="section-tag">
 
-            <p>
+                Why Choose Me
 
-                I believe effective administrative support is built on reliability, organization, and attention to detail. I take ownership of every task, communicate professionally, and consistently deliver accurate work on time. Whether managing records, preparing documents, or coordinating daily operations, my goal is to help clients stay organized and productive while giving them more time to focus on growing their business.
+            </span>
+
+            <h2>
+
+                Why Work With Me
+
+            </h2>
+
+        </div>
+
+        <div class="why-wrapper">
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+
+                    Reliable
+
+                </h3>
+
+                <p>
+
+                    Deadlines matter. I consistently deliver quality work on time.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+
+                    Confidential
+
+                </h3>
+
+                <p>
+
+                    I understand the importance of privacy and secure document handling.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>
+
+                    Efficient
+
+                </h3>
+
+                <p>
+
+                    Organized workflows that reduce repetitive tasks and improve productivity.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <h3>
+
+                    Communicative
+
+                </h3>
+
+                <p>
+
+                    Clear communication and regular updates throughout every project.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+SERVICES
+====================================================== -->
+
+<section id="services" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+
+                What I Do
+
+            </span>
+
+            <h2>
+
+                Administrative Services
+
+            </h2>
+
+            <p class="section-description">
+
+                Professional administrative support designed to keep your business organized, productive, and running efficiently.
 
             </p>
 
         </div>
 
-    </div>
+        <div class="services-grid">
 
-</section>
+            <article class="service-card">
 
-<!--=================================
-SERVICES
-==================================-->
+                <i class="fa-solid fa-keyboard"></i>
 
-<section id="services">
-
-    <div class="container">
-
-        <h2>Services</h2>
-
-        <p class="section-description">
-
-            Administrative solutions designed to keep your business organized, efficient, and running smoothly.
-
-        </p>
-
-        <div class="skills-grid">
-
-            <article class="skill-card">
-
-                <h3>
-
-                    <i class="fa-solid fa-keyboard"></i>
-
-                    Data Entry
-
-                </h3>
+                <h3>Data Entry</h3>
 
                 <p>
 
-                    Accurate data entry, verification, spreadsheet management, record updates, formatting, and database organization.
+                    Accurate encoding, verification, spreadsheet management, and database updates.
 
                 </p>
 
             </article>
 
-            <article class="skill-card">
+            <article class="service-card">
 
-                <h3>
+                <i class="fa-solid fa-folder-open"></i>
 
-                    <i class="fa-solid fa-folder-open"></i>
-
-                    Administrative Support
-
-                </h3>
+                <h3>Administrative Support</h3>
 
                 <p>
 
-                    Document preparation, file organization, records management, reports, memorandums, and office administration.
+                    Daily administrative assistance, records management, and office coordination.
 
                 </p>
 
             </article>
 
-            <article class="skill-card">
+            <article class="service-card">
 
-                <h3>
+                <i class="fa-solid fa-envelope"></i>
 
-                    <i class="fa-solid fa-envelope"></i>
-
-                    Email Management
-
-                </h3>
+                <h3>Email Management</h3>
 
                 <p>
 
-                    Inbox organization, email correspondence, drafting replies, and maintaining professional communication.
+                    Organizing inboxes, drafting replies, and maintaining professional communication.
 
                 </p>
 
             </article>
 
-            <article class="skill-card">
+            <article class="service-card">
 
-                <h3>
+                <i class="fa-solid fa-calendar-days"></i>
 
-                    <i class="fa-solid fa-calendar-days"></i>
-
-                    Calendar Management
-
-                </h3>
+                <h3>Calendar Management</h3>
 
                 <p>
 
-                    Appointment scheduling, deadline tracking, meeting coordination, and calendar organization.
+                    Scheduling meetings, appointments, reminders, and managing deadlines.
 
                 </p>
 
             </article>
 
-            <article class="skill-card">
+            <article class="service-card">
 
-                <h3>
+                <i class="fa-solid fa-file-lines"></i>
 
-                    <i class="fa-solid fa-file-lines"></i>
-
-                    Document Preparation
-
-                </h3>
+                <h3>Document Preparation</h3>
 
                 <p>
 
-                    Creating reports, forms, presentations, letters, certificates, and professionally formatted documents.
+                    Reports, forms, letters, presentations, memorandums, and business documents.
 
                 </p>
 
             </article>
 
-            <article class="skill-card">
+            <article class="service-card">
 
-                <h3>
+                <i class="fa-solid fa-magnifying-glass"></i>
 
-                    <i class="fa-solid fa-palette"></i>
-
-                    Canva Design
-
-                </h3>
+                <h3>Internet Research</h3>
 
                 <p>
 
-                    Posters, presentations, certificates, social media graphics, and other visual materials.
+                    Online research, lead gathering, and information organization.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <i class="fa-solid fa-palette"></i>
+
+                <h3>Canva Design</h3>
+
+                <p>
+
+                    Professional graphics, presentations, certificates, and social media visuals.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <i class="fa-solid fa-diagram-project"></i>
+
+                <h3>Task Coordination</h3>
+
+                <p>
+
+                    Organizing priorities, monitoring deadlines, and improving workflow efficiency.
 
                 </p>
 
@@ -480,59 +653,65 @@ SERVICES
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 EDUCATION
-==================================-->
+====================================================== -->
 
-<section id="education">
+<section id="education" class="section">
 
     <div class="container">
 
-        <h2>Education</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
 
-            Academic foundation in information technology with specialization in web and mobile application development.
+                Education
 
-        </p>
+            </span>
 
-        <div class="timeline">
+            <h2>
 
-            <article class="timeline-card">
+                Academic Background
 
-                <div class="timeline-header">
+            </h2>
 
-                    <div>
+        </div>
 
-                        <h3>
+        <div class="education-card">
 
-                            Bachelor of Science in Information Technology
+            <div class="education-year">
 
-                        </h3>
+                2022<br>2026
 
-                        <p class="company">
+            </div>
 
-                            Tarlac State University
+            <div class="education-content">
 
-                        </p>
+                <h3>
 
-                    </div>
+                    Bachelor of Science in Information Technology
 
-                    <span class="date">
+                </h3>
 
-                        2022 – 2026
+                <h4>
 
-                    </span>
+                    Specialization in Web and Mobile Application Development
 
-                </div>
+                </h4>
 
                 <p>
 
-                    <strong>Specialization:</strong> Web and Mobile Application Development
+                    Tarlac State University
 
                 </p>
 
-            </article>
+                <p>
+
+                    Built a strong foundation in software development, information systems, databases, web technologies, UI/UX design, and project management while developing strong analytical and problem-solving skills that complement administrative work.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -540,119 +719,129 @@ EDUCATION
 
 </section>
 
-<!--=================================
-EXPERIENCE
-==================================-->
+<!-- =====================================================
+PROFESSIONAL EXPERIENCE
+====================================================== -->
 
-<section id="experience">
+<section id="experience" class="section">
 
     <div class="container">
 
-        <h2>Professional Experience</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
 
-            More than three years of experience providing administrative support for private clients across educational, business, and corporate environments.
+                Experience
 
-        </p>
+            </span>
 
-        <div class="timeline">
+            <h2>
 
-            <!--=========================
-            EXPERIENCE 1
-            ==========================-->
+                Professional Journey
 
-            <article class="timeline-card">
+            </h2>
 
-                <div class="timeline-header">
+            <p class="section-description">
 
-                    <div>
+                A timeline of my administrative experience supporting professionals across educational, business, and corporate environments.
 
-                        <h3>
+            </p>
 
-                            Personal Administrative Assistant
+        </div>
 
-                        </h3>
+        <div class="experience-roadmap">
 
-                        <p class="company">
+            <!-- Timeline Line -->
 
-                            Private Client (Education & Business)
+            <div class="road-line"></div>
 
-                        </p>
+            <!-- Experience 1 -->
 
-                    </div>
+            <article class="road-card">
 
-                    <span class="date">
+                <div class="road-dot"></div>
 
-                        April 2024 – May 2026 | Hybrid
+                <div class="road-content">
+
+                    <span class="road-date">
+
+                        April 2024 • May 2026
 
                     </span>
 
+                    <h3>
+
+                        Personal Administrative Assistant
+
+                    </h3>
+
+                    <h4>
+
+                        Private Client • Education & Business
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Managed administrative records, spreadsheets, and business documentation.</li>
+
+                        <li>Prepared reports, memorandums, forms, and professional correspondence.</li>
+
+                        <li>Organized digital and physical filing systems for efficient document retrieval.</li>
+
+                        <li>Managed calendars, appointments, deadlines, and administrative workflows.</li>
+
+                        <li>Handled confidential files with professionalism and accuracy.</li>
+
+                        <li>Created presentations, certificates, posters, and marketing materials using Canva.</li>
+
+                        <li>Utilized Microsoft Office, Google Workspace, Canva, ChatGPT, and productivity tools.</li>
+
+                    </ul>
+
                 </div>
-
-                <ul>
-
-                    <li>Managed data entry, data verification, and record updates for administrative and business documents.</li>
-
-                    <li>Prepared reports, correspondence, memorandums, forms, and other professional documents.</li>
-
-                    <li>Maintained organized digital and physical filing systems for efficient document retrieval.</li>
-
-                    <li>Managed email correspondence, confidential files, and document organization.</li>
-
-                    <li>Coordinated calendars, appointments, administrative tasks, and deadlines.</li>
-
-                    <li>Created posters, certificates, presentations, and promotional materials using Canva.</li>
-
-                    <li>Utilized Microsoft Office, Google Workspace, Canva, and ChatGPT to improve administrative workflow.</li>
-
-                </ul>
 
             </article>
 
-            <!--=========================
-            EXPERIENCE 2
-            ==========================-->
+            <!-- Experience 2 -->
 
-            <article class="timeline-card">
+            <article class="road-card">
 
-                <div class="timeline-header">
+                <div class="road-dot"></div>
 
-                    <div>
+                <div class="road-content">
 
-                        <h3>
+                    <span class="road-date">
 
-                            Data Entry Assistant (Part-time)
-
-                        </h3>
-
-                        <p class="company">
-
-                            Private Client (Corporate Professional)
-
-                        </p>
-
-                    </div>
-
-                    <span class="date">
-
-                        February 2023 – January 2024
+                        February 2023 • January 2024
 
                     </span>
 
+                    <h3>
+
+                        Data Entry Assistant
+
+                    </h3>
+
+                    <h4>
+
+                        Private Corporate Client
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Performed accurate data encoding and verification.</li>
+
+                        <li>Maintained organized spreadsheet records.</li>
+
+                        <li>Managed structured digital filing systems.</li>
+
+                        <li>Conducted internet research supporting administrative operations.</li>
+
+                    </ul>
+
                 </div>
-
-                <ul>
-
-                    <li>Performed accurate data entry and maintained organized spreadsheet records.</li>
-
-                    <li>Verified information before encoding to maintain data accuracy.</li>
-
-                    <li>Organized digital documents and maintained structured electronic files.</li>
-
-                    <li>Conducted internet research to support administrative tasks and reporting.</li>
-
-                </ul>
 
             </article>
 
@@ -662,31 +851,49 @@ EXPERIENCE
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 CORE SKILLS
-==================================-->
+====================================================== -->
 
-<section id="skills">
+<section id="skills" class="section">
 
     <div class="container">
 
-        <h2>Core Skills</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
 
-            Administrative, technical, and professional skills developed through hands-on experience supporting private clients.
+                Strengths
 
-        </p>
+            </span>
 
-        <div class="skills-grid">
+            <h2>
+
+                Core Skills
+
+            </h2>
+
+            <p class="section-description">
+
+                A combination of administrative expertise, technical proficiency, and professional qualities developed through real-world experience.
+
+            </p>
+
+        </div>
+
+        <div class="skills-wrapper">
 
             <!-- Administrative -->
 
-            <article class="skill-card">
+            <div class="skills-box">
 
-                <h3>
+                <div class="skill-icon">
 
                     <i class="fa-solid fa-folder-open"></i>
+
+                </div>
+
+                <h3>
 
                     Administrative
 
@@ -694,31 +901,35 @@ CORE SKILLS
 
                 <ul>
 
-                    <li><i class="fa-solid fa-check"></i> Administrative Support</li>
+                    <li>Administrative Support</li>
 
-                    <li><i class="fa-solid fa-check"></i> Data Entry & Verification</li>
+                    <li>Data Entry & Verification</li>
 
-                    <li><i class="fa-solid fa-check"></i> Document Preparation</li>
+                    <li>Records Management</li>
 
-                    <li><i class="fa-solid fa-check"></i> Records Management</li>
+                    <li>Document Preparation</li>
 
-                    <li><i class="fa-solid fa-check"></i> Digital & Physical Filing</li>
+                    <li>Calendar Management</li>
 
-                    <li><i class="fa-solid fa-check"></i> Email Management</li>
+                    <li>Email Management</li>
 
-                    <li><i class="fa-solid fa-check"></i> Calendar Coordination</li>
+                    <li>Digital Filing Systems</li>
 
                 </ul>
 
-            </article>
+            </div>
 
             <!-- Technical -->
 
-            <article class="skill-card">
+            <div class="skills-box">
 
-                <h3>
+                <div class="skill-icon">
 
                     <i class="fa-solid fa-computer"></i>
+
+                </div>
+
+                <h3>
 
                     Technical
 
@@ -726,29 +937,33 @@ CORE SKILLS
 
                 <ul>
 
-                    <li><i class="fa-solid fa-check"></i> Microsoft Office</li>
+                    <li>Microsoft Office</li>
 
-                    <li><i class="fa-solid fa-check"></i> Google Workspace</li>
+                    <li>Google Workspace</li>
 
-                    <li><i class="fa-solid fa-check"></i> Canva</li>
+                    <li>Canva</li>
 
-                    <li><i class="fa-solid fa-check"></i> ChatGPT</li>
+                    <li>ChatGPT</li>
 
-                    <li><i class="fa-solid fa-check"></i> Notion</li>
+                    <li>Notion</li>
 
-                    <li><i class="fa-solid fa-check"></i> Slack</li>
+                    <li>Slack</li>
 
                 </ul>
 
-            </article>
+            </div>
 
             <!-- Professional -->
 
-            <article class="skill-card">
+            <div class="skills-box">
 
-                <h3>
+                <div class="skill-icon">
 
                     <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+                <h3>
 
                     Professional
 
@@ -756,21 +971,21 @@ CORE SKILLS
 
                 <ul>
 
-                    <li><i class="fa-solid fa-check"></i> Organization</li>
+                    <li>Organization</li>
 
-                    <li><i class="fa-solid fa-check"></i> Attention to Detail</li>
+                    <li>Communication</li>
 
-                    <li><i class="fa-solid fa-check"></i> Time Management</li>
+                    <li>Time Management</li>
 
-                    <li><i class="fa-solid fa-check"></i> Adaptability</li>
+                    <li>Attention to Detail</li>
 
-                    <li><i class="fa-solid fa-check"></i> Confidentiality</li>
+                    <li>Confidentiality</li>
 
-                    <li><i class="fa-solid fa-check"></i> Communication</li>
+                    <li>Adaptability</li>
 
                 </ul>
 
-            </article>
+            </div>
 
         </div>
 
@@ -778,70 +993,66 @@ CORE SKILLS
 
 </section>
 
-<!--=================================
-TOOLS
-==================================-->
+<!-- =====================================================
+TOOLS & SOFTWARE
+====================================================== -->
 
-<section id="tools">
+<section id="tools" class="section">
 
     <div class="container">
 
-        <h2>Tools & Software</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
 
-            Productivity and collaboration tools I use to support daily administrative operations.
+                Productivity
 
-        </p>
+            </span>
+
+            <h2>
+
+                Tools & Software
+
+            </h2>
+
+            <p class="section-description">
+
+                Applications I use to deliver efficient administrative support and maintain organized workflows.
+
+            </p>
+
+        </div>
 
         <div class="tools-grid">
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-brands fa-microsoft"></i>
-
-                <h4>Microsoft Office</h4>
-
+                <span>Microsoft Office</span>
             </div>
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-brands fa-google"></i>
-
-                <h4>Google Workspace</h4>
-
+                <span>Google Workspace</span>
             </div>
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-solid fa-palette"></i>
-
-                <h4>Canva</h4>
-
+                <span>Canva</span>
             </div>
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-solid fa-robot"></i>
-
-                <h4>ChatGPT</h4>
-
+                <span>ChatGPT</span>
             </div>
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-solid fa-note-sticky"></i>
-
-                <h4>Notion</h4>
-
+                <span>Notion</span>
             </div>
 
-            <div class="tool">
-
+            <div class="tool-card">
                 <i class="fa-brands fa-slack"></i>
-
-                <h4>Slack</h4>
-
+                <span>Slack</span>
             </div>
 
         </div>
@@ -850,217 +1061,172 @@ TOOLS
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 PORTFOLIO
-==================================-->
+====================================================== -->
 
-<section id="portfolio">
+<section id="portfolio" class="section">
 
     <div class="container">
 
-        <h2>Portfolio</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
+                Portfolio
+            </span>
 
-            Selected sample projects demonstrating my administrative, organizational, and documentation skills.
+            <h2>
+                Featured Work
+            </h2>
 
-        </p>
+            <p class="section-description">
+                Sample administrative projects demonstrating organization, documentation, and productivity support.
+            </p>
+
+        </div>
 
         <div class="portfolio-grid">
 
-            <!-- 1 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/data-entry.jpg"
-                        alt="Data Entry">
-
-                </div>
+                <img src="assets/portfolio/data-entry.jpg"
+                     alt="Data Entry">
 
                 <div class="portfolio-content">
 
                     <h3>Data Entry Management</h3>
 
                     <p>
-
-                        Organized spreadsheets with accurate encoding, formatting, and verification.
-
+                        Accurate spreadsheet management, formatting, and verification.
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/data-entry.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
             </article>
 
-            <!-- 2 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/document.jpg"
-                        alt="Document">
-
-                </div>
+                <img src="assets/portfolio/document.jpg"
+                     alt="Document Preparation">
 
                 <div class="portfolio-content">
 
                     <h3>Document Preparation</h3>
 
                     <p>
-
-                        Business letters, reports, memorandums, forms, and administrative documents.
-
+                        Reports, memorandums, forms, and business documents.
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/document.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
             </article>
 
-            <!-- 3 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/email.jpg"
-                        alt="Email">
-
-                </div>
+                <img src="assets/portfolio/email.jpg"
+                     alt="Email Management">
 
                 <div class="portfolio-content">
 
                     <h3>Email Management</h3>
 
                     <p>
-
-                        Organized inboxes, drafted responses, and maintained professional communication.
+                        Professional inbox organization and communication.
 
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/email.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
             </article>
 
-            <!-- 4 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/calendar.jpg"
-                        alt="Calendar">
-
-                </div>
+                <img src="assets/portfolio/calendar.jpg"
+                     alt="Calendar">
 
                 <div class="portfolio-content">
 
                     <h3>Calendar Management</h3>
 
                     <p>
-
-                        Scheduling meetings, appointments, reminders, and deadline tracking.
-
+                        Scheduling appointments and deadline management.
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/calendar.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
             </article>
 
-            <!-- 5 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/files.jpg"
-                        alt="File Management">
-
-                </div>
+                <img src="assets/portfolio/files.jpg"
+                     alt="File Organization">
 
                 <div class="portfolio-content">
 
                     <h3>File Organization</h3>
 
                     <p>
-
-                        Structured digital filing systems for efficient document retrieval.
-
+                        Structured digital filing systems.
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/files.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
             </article>
 
-            <!-- 6 -->
-
             <article class="portfolio-card">
 
-                <div class="portfolio-image">
-
-                    <img src="assets/portfolio/canva.jpg"
-                        alt="Canva">
-
-                </div>
+                <img src="assets/portfolio/canva.jpg"
+                     alt="Canva">
 
                 <div class="portfolio-content">
 
                     <h3>Canva Designs</h3>
 
                     <p>
-
-                        Posters, certificates, presentations, and promotional materials.
-
+                        Posters, certificates and presentations.
                     </p>
 
-                    <a href="#">
+                    <button class="portfolio-btn"
+                            data-image="assets/portfolio/canva.jpg">
 
                         View Sample
 
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </button>
 
                 </div>
 
@@ -1072,71 +1238,61 @@ PORTFOLIO
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 CERTIFICATIONS
-==================================-->
+====================================================== -->
 
-<section id="certifications">
+<section id="certifications" class="section">
 
     <div class="container">
 
-        <h2>Certifications & Training</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
+                Certifications
+            </span>
 
-            I continuously improve my administrative, technical, and digital skills through professional seminars and training.
+            <h2>
+                Certifications & Training
+            </h2>
 
-        </p>
+            <p class="section-description">
+                Continuous learning to strengthen administrative and digital skills.
+            </p>
 
-        <div class="certificates-grid">
+        </div>
 
-            <div class="certificate-card">
+        <div class="certificate-gallery">
 
-                <i class="fa-solid fa-certificate"></i>
+            <div class="certificate-item">
 
-                <h3>General Virtual Assistant Training</h3>
-
-                <span>2025</span>
-
-            </div>
-
-            <div class="certificate-card">
-
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>Data Privacy Awareness Seminar</h3>
-
-                <span>2025</span>
+                <img src="assets/certificates/certificate1.jpg"
+                     alt="Certificate 1"
+                     class="certificate-image">
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-item">
 
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>AI Prompts 101</h3>
-
-                <span>2025</span>
+                <img src="assets/certificates/certificate2.jpg"
+                     alt="Certificate 2"
+                     class="certificate-image">
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-item">
 
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>Enhancing Digital Creativity Through Canva</h3>
-
-                <span>2025</span>
+                <img src="assets/certificates/certificate3.jpg"
+                     alt="Certificate 3"
+                     class="certificate-image">
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-item">
 
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>AI for Digital Novice MSMEs</h3>
-
-                <span>2025</span>
+                <img src="assets/certificates/certificate4.jpg"
+                     alt="Certificate 4"
+                     class="certificate-image">
 
             </div>
 
@@ -1146,93 +1302,101 @@ CERTIFICATIONS
 
 </section>
 
-<!--=================================
+<!-- =====================================================
 CONTACT
-==================================-->
+====================================================== -->
 
-<section id="contact">
+<section id="contact" class="section">
 
     <div class="container">
 
-        <h2>Let's Work Together</h2>
+        <div class="section-heading">
 
-        <p class="section-description">
+            <span class="section-tag">
+                Contact
+            </span>
 
-            Looking for a reliable Administrative Assistant or Virtual Assistant? I'd love to help streamline your daily operations.
+            <h2>
+                Let's Work Together
+            </h2>
 
-        </p>
-
-        <div class="contact-wrapper">
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h3>Email</h3>
-
-                <a href="mailto:va.shinayabes@gmail.com">
-
-                    va.shinayabes@gmail.com
-
-                </a>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-linkedin"></i>
-
-                <h3>LinkedIn</h3>
-
-                <a href="https://linkedin.com/in/shinayabes" target="_blank">
-
-                    linkedin.com/in/shinayabes
-
-                </a>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>GitHub</h3>
-
-                <a href="https://github.com/shinayabes" target="_blank">
-
-                    github.com/shinayabes
-
-                </a>
-
-            </div>
+            <p class="section-description">
+                Looking for a dependable Administrative Assistant? I'd love to hear from you.
+            </p>
 
         </div>
 
-        <div class="social-links">
+        <div class="contact-container">
 
-            <a href="https://linkedin.com/in/shinayabes" target="_blank">
+            <div class="contact-info">
 
-                <i class="fab fa-linkedin"></i>
+                <i class="fa-solid fa-envelope contact-icon"></i>
 
-            </a>
+                <h3>Email</h3>
 
-            <a href="https://github.com/shinayabes" target="_blank">
+                <p class="contact-email">
 
-                <i class="fab fa-github"></i>
+                    <a href="mailto:va.shinayabes@gmail.com">
 
-            </a>
+                        va.shinayabes@gmail.com
 
-            <a href="https://facebook.com/" target="_blank">
+                    </a>
 
-                <i class="fab fa-facebook"></i>
+                </p>
 
-            </a>
+                <div class="social-icons">
 
-            <a href="https://instagram.com/" target="_blank">
+                    <button class="social-copy"
+                            data-copy="linkedin.com/in/shinayabes">
 
-                <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
 
-            </a>
+                    </button>
+
+                    <button class="social-copy"
+                            data-copy="@your_instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Send Message
+
+                </button>
+
+            </form>
 
         </div>
 
@@ -1242,9 +1406,28 @@ CONTACT
 
 </main>
 
-<!--=================================
+<!-- =====================================================
+IMAGE MODAL
+====================================================== -->
+
+<div class="image-modal" id="imageModal">
+
+    <span class="close-modal">
+
+        &times;
+
+    </span>
+
+    <img
+        id="modalImage"
+        src=""
+        alt="Preview">
+
+</div>
+
+<!-- =====================================================
 BACK TO TOP
-==================================-->
+====================================================== -->
 
 <button id="backToTop">
 
@@ -1252,17 +1435,25 @@ BACK TO TOP
 
 </button>
 
-<!--=================================
+<!-- =====================================================
 FOOTER
-==================================-->
+====================================================== -->
 
 <footer>
 
     <div class="container">
 
-        <div class="footer-logo">
+        <div class="footer-brand">
 
-            SHINA<span>.</span>
+            <img
+                src="assets/images/Logo.png"
+                alt="Logo">
+
+            <h2>
+
+                SHINA
+
+            </h2>
 
         </div>
 
@@ -1274,17 +1465,13 @@ FOOTER
 
         <p>
 
-            © 2026 Shina Yabes. All Rights Reserved.
+            © <span id="year"></span> Shina Yabes. All Rights Reserved.
 
         </p>
 
     </div>
 
 </footer>
-
-<!--=================================
-JAVASCRIPT
-==================================-->
 
 <script src="js/script.js"></script>
 
