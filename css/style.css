@@ -56,7 +56,7 @@ body{
 
 img{
     display:block;
-    width:100%;
+    max-width:100%;
 }
 
 a{
@@ -172,17 +172,20 @@ LOGO
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
+    flex-shrink:0;
     font-size:1.8rem;
     font-weight:800;
     letter-spacing:2px;
 }
 
 .logo-img{
-    width:42px;
-    height:42px;
+    display:block;
+    width:38px;
+    height:38px;
+    min-width:38px;
+    max-width:38px;
     object-fit:contain;
-    flex-shrink:0;
 }
 
 .logo span{
